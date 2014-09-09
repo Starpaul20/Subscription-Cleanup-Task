@@ -3,13 +3,13 @@
 
 ## Version number reset for MyBB 1.8 ##
 
-2.0.1
+2.0.1 (December 20th, 2011)
 - Dropped MyBB 1.4 support
 - Optimization and general plugin updating
 
-2.0
+2.0 (August 4th, 2010)
 - Updated plugin to work with MyBB 1.6
 - Merged settings location
 
-1.0
+1.0 (September 20th, 2009)
 - Initial release
