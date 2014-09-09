@@ -1,7 +1,7 @@
 <?php
 /**
- * Subscription cleanup task
- * Copyright 2010 Starpaul20
+ * Subscription Cleanup Task
+ * Copyright 2009 Starpaul20
  */
 
 function task_subscriptioncleanup($task)
@@ -9,9 +9,9 @@ function task_subscriptioncleanup($task)
 	global $mybb, $db;
 
 	// Delete old thread subscriptions
-	if($mybb->settings['threadsubscriptioncut'] > 0)
+	if((int)$mybb->settings['threadsubscriptioncut'] > 0)
 	{
-		$cut = TIME_NOW-($mybb->settings['threadsubscriptioncut']*60*60*24);
+		$cut = TIME_NOW-((int)$mybb->settings['threadsubscriptioncut']*60*60*24);
 		$query = $db->simple_select("threads", "tid, lastpost");
 		while($old_sub = $db->fetch_array($query))
 		{
@@ -23,9 +23,9 @@ function task_subscriptioncleanup($task)
 	}
 
 	// Delete old forum subscriptions
-	if($mybb->settings['forumsubscriptioncut'] > 0)
+	if((int)$mybb->settings['forumsubscriptioncut'] > 0)
 	{
-		$cut = TIME_NOW-($mybb->settings['forumsubscriptioncut']*60*60*24);
+		$cut = TIME_NOW-((int)$mybb->settings['forumsubscriptioncut']*60*60*24);
 		$query = $db->simple_select("forums", "fid, lastpost");
 		while($old_fsub = $db->fetch_array($query))
 		{

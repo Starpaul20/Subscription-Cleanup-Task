@@ -34,7 +34,7 @@ function subscriptioncleanup_activate()
 {
 	global $db;
 	$query = $db->simple_select("settinggroups", "gid", "name='member'");
-	$gid = intval($db->fetch_field($query, "gid"));
+	$gid = $db->fetch_field($query, "gid");
 
 	$insertarray = array(
 		'name' => 'threadsubscriptioncut',
@@ -43,7 +43,7 @@ function subscriptioncleanup_activate()
 		'optionscode' => 'text',
 		'value' => 120,
 		'disporder' => 38,
-		'gid' => $gid
+		'gid' => (int)$gid
 	);
 	$db->insert_query("settings", $insertarray);
 
@@ -54,7 +54,7 @@ function subscriptioncleanup_activate()
 		'optionscode' => 'text',
 		'value' => 240,
 		'disporder' => 39,
-		'gid' => $gid
+		'gid' => (int)$gid
 	);
 	$db->insert_query("settings", $insertarray);
 
