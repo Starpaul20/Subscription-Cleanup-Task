@@ -1,6 +1,6 @@
 ## INFORMATION ##
 
-Subscription Cleanup Task (2.0.1) for MyBB 1.6
+Subscription Cleanup Task (1.0) for MyBB 1.8
 Created by: Starpaul20
 Copyright: ©2009
 License: GPL
@@ -8,6 +8,8 @@ License: GPL
 Adds a daily task to your board that deletes old thread and forum subscriptions from threads/forums that haven't been posted in for a period of time (set in settings).
 
 The settings for this are located at the bottom of the 'User Registration and Profile Options' setting group.
+
+The 'oldrelease' branch contains the 1.6 version of the plugin.
 
 
 ## INSTALLATION ##

@@ -1,7 +1,7 @@
 <?php
 /**
- * Subscription cleanup task
- * Copyright 2010 Starpaul20
+ * Subscription Cleanup Task
+ * Copyright 2009 Starpaul20
  */
 
 // Disallow direct access to this file for security reasons
@@ -21,9 +21,8 @@ function subscriptioncleanup_info()
 		"website"			=> "http://galaxiesrealm.com/index.php",
 		"author"			=> "Starpaul20",
 		"authorsite"		=> "http://galaxiesrealm.com/index.php",
-		"version"			=> "2.0.1",
-		"guid"				=> "c0f6a5b3059d6abbe8788ce8985a7e8c",
-		"compatibility"		=> "16*"
+		"version"			=> "1.0",
+		"compatibility"		=> "18*"
 	);
 }
 
