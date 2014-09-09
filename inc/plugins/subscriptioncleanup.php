@@ -15,9 +15,12 @@ if(!defined("IN_MYBB"))
 // The information that shows up on the plugin manager
 function subscriptioncleanup_info()
 {
+	global $lang;
+	$lang->load("subscriptioncleanup", true);
+
 	return array(
-		"name"				=> "Subscription Cleanup task",
-		"description"		=> "Adds a task to your board to delete old thread and forum subscriptions from inactive threads/forums.",
+		"name"				=> $lang->subscriptioncleanup_info_name,
+		"description"		=> $lang->subscriptioncleanup_info_desc,
 		"website"			=> "http://galaxiesrealm.com/index.php",
 		"author"			=> "Starpaul20",
 		"authorsite"		=> "http://galaxiesrealm.com/index.php",
