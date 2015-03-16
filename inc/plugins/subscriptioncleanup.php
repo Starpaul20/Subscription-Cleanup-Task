@@ -41,7 +41,7 @@ function subscriptioncleanup_activate()
 		'name' => 'threadsubscriptioncut',
 		'title' => 'Delete old Thread Subscriptions',
 		'description' => 'The number of days that a thread must be inactive before its thread subscriptions are deleted. Set to 0 to disable.',
-		'optionscode' => 'text',
+		'optionscode' => 'numeric',
 		'value' => 120,
 		'disporder' => 38,
 		'gid' => (int)$gid
@@ -52,7 +52,7 @@ function subscriptioncleanup_activate()
 		'name' => 'forumsubscriptioncut',
 		'title' => 'Delete old Forum Subscriptions',
 		'description' => 'The number of days that a forum must be inactive before its forum subscriptions are deleted. Set to 0 to disable.',
-		'optionscode' => 'text',
+		'optionscode' => 'numeric',
 		'value' => 240,
 		'disporder' => 39,
 		'gid' => (int)$gid
