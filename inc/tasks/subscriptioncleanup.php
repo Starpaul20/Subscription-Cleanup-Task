@@ -6,7 +6,8 @@
 
 function task_subscriptioncleanup($task)
 {
-	global $mybb, $db;
+	global $mybb, $db, $lang;
+	$lang->load("subscriptioncleanup", true);
 
 	// Delete old thread subscriptions
 	if((int)$mybb->settings['threadsubscriptioncut'] > 0)
@@ -36,6 +37,6 @@ function task_subscriptioncleanup($task)
 		}
 	}
 
-	add_task_log($task, "The subscription cleanup task successfully ran.");
+	add_task_log($task, $lang->subscription_cleanup_ran);
 }
 ?>
