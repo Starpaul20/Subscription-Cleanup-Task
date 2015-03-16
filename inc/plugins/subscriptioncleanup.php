@@ -43,7 +43,7 @@ function subscriptioncleanup_activate()
 		'description' => 'The number of days that a thread must be inactive before its thread subscriptions are deleted. Set to 0 to disable.',
 		'optionscode' => 'numeric',
 		'value' => 120,
-		'disporder' => 38,
+		'disporder' => 25,
 		'gid' => (int)$gid
 	);
 	$db->insert_query("settings", $insertarray);
@@ -54,7 +54,7 @@ function subscriptioncleanup_activate()
 		'description' => 'The number of days that a forum must be inactive before its forum subscriptions are deleted. Set to 0 to disable.',
 		'optionscode' => 'numeric',
 		'value' => 240,
-		'disporder' => 39,
+		'disporder' => 26,
 		'gid' => (int)$gid
 	);
 	$db->insert_query("settings", $insertarray);
