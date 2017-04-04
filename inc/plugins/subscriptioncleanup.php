@@ -90,4 +90,3 @@ function subscriptioncleanup_deactivate()
 	$db->delete_query("tasks", "file='subscriptioncleanup'");
 	rebuild_settings();
 }
-?>

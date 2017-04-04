@@ -39,4 +39,3 @@ function task_subscriptioncleanup($task)
 
 	add_task_log($task, $lang->subscription_cleanup_ran);
 }
-?>
