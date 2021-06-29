@@ -1,6 +1,6 @@
 ## INFORMATION ##
 
-Subscription Cleanup Task (1.1) for MyBB 1.8
+Subscription Cleanup Task (1.2) for MyBB 1.8
 Created by: Starpaul20
 Copyright: ©2009
 License: GPL
